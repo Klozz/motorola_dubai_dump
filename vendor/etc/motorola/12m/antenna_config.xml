@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+    <SETTINGS cameraid="0">
+        <COMMAND>
+            <TITLE>WIFI 2.4 GHz 2412 MHz ANT0 20.5 dBm</TITLE>
+            <CREATE>WLAN_SWITCH_TEST_MODE</CREATE>
+            <START>WLAN_2.4GHz_Tx_on_2412_ANT0</START>
+            <STOP>Tx_off_2.4G</STOP>
+        </COMMAND>
+        <COMMAND>
+            <TITLE>WIFI 2.4 GHz 2412 MHz ANT1 20.5 dBm</TITLE>
+            <START>WLAN_2.4GHz_Tx_on_2412_ANT1</START>
+            <STOP>Tx_off_2.4G</STOP>
+        </COMMAND>
+        <COMMAND>
+            <TITLE>WIFI 2.4 GHz 2472 MHz ANT0 20.5 dBm</TITLE>
+            <START>WLAN_2.4GHz_Tx_on_2472_ANT0</START>
+            <STOP>Tx_off_2.4G</STOP>
+        </COMMAND>
+        <COMMAND>
+            <TITLE>WIFI 2.4 GHz 2472 MHz ANT1 20.5 dBm</TITLE>
+            <START>WLAN_2.4GHz_Tx_on_2472_ANT1</START>
+            <STOP>Tx_off_2.4G</STOP>
+            <DESTROY>WLAN_SWITCH_PRODUCT_MODE</DESTROY>
+        </COMMAND>
+        <COMMAND>
+            <TITLE>N78 100 M 3350 MHz 26 dBm</TITLE>
+            <START>NR_n78_Tx_On_3350MHz</START>
+        </COMMAND>
+        <COMMAND>
+            <TITLE>N78 100 M 3550 MHz 26 dBm</TITLE>
+            <START>NR_n78_Tx_On_3550MHz</START>
+        </COMMAND>
+        <COMMAND>
+            <TITLE>N78 100 M 3700 MHz 26 dBm</TITLE>
+            <START>NR_n78_Tx_On_3700MHz</START>
+        </COMMAND>
+    </SETTINGS>
+</CONFIG>

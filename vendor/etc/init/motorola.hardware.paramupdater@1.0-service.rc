@@ -1,0 +1,4 @@
+service paramupdater-hal-1-0 /vendor/bin/hw/motorola.hardware.paramupdater@1.0-service
+    class hal
+    user system
+    group system

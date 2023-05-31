@@ -1,0 +1,9 @@
+fts
+samsung_mmi.primary
+samsung_mmi
+synaptics_tcm_touch
+sec_ts
+goodix_ts
+fts_ts
+NVTCapacitiveTouchScreen
+
