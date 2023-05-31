@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <component-override package="com.motorola.motcameradesktop" >
+        <component class=".SettingsActivity" enabled="true" />
+    </component-override>
+</config>

@@ -1,0 +1,24 @@
+<app-optimization version="1">
+
+    <!-- classified apps -->
+    <optimization name="base_app">
+        <supported-modes>video_mode, video_fullscreen_mode</supported-modes>
+    </optimization>
+
+    <optimization name="rr_opt_app" parent="base_app">
+        <default-rr>auto</default-rr>
+    </optimization>
+
+    <optimization name="normal_app" parent="base_app">
+    </optimization>
+
+    <!-- recognized in-app modes, will merge with app opt at runtime -->
+    <optimization name="video_mode">
+        <default-rr>auto</default-rr>
+    </optimization>
+
+    <optimization name="video_fullscreen_mode">
+        <default-rr>video</default-rr>
+    </optimization>
+
+</app-optimization>
