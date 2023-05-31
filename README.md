@@ -1,0 +1,14 @@
+# user 12 S1RDS32.55-106-4 d573f release-keys
+- manufacturer: motorola
+- platform: lahaina
+- codename: dubai
+- flavor: user
+- release: 12
+- id: S1RDS32.55-106-4
+- incremental: d573f
+- tags: release-keys
+- fingerprint: motorola/dubai_g/dubai:11/S1RDS32.55-106-4/d573f:user/release-keys
+- is_ab: true
+- brand: motorola
+- branch: user-12-S1RDS32.55-106-4-d573f-release-keys
+- repo: motorola_dubai_dump
