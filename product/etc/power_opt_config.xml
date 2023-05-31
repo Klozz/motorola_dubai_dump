@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Power optimizations device config
+-->
+<power-optimization version="1">
+    <optimization name="com.ss.android.ugc.aweme.lite" refs="" />
+    <optimization name="com.ss.android.ugc.trill" refs="" />
+    <optimization name="com.smile.gifmaker" refs="" />
+    <optimization name="com.google.android.youtube" refs="" />
+    <optimization name="com.instagram.android" refs="" />
+    <optimization name="com.facebook.katana" refs="" />
+    <optimization name="com.tencent.qqlive" refs="" />
+    <optimization name="tv.danmaku.bili" refs="" />
+    <optimization name="com.sina.weibo" refs="" />
+    <optimization name="com.qiyi.video" refs="" />
+    <optimization name="tv.pps.mobile" refs="" />
+    <optimization name="com.ss.android.ugc.aweme" refs="" />
+    <optimization name="com.kuaishou.nebula" refs="" />
+    <optimization name="com.hunantv.imgo.activity" refs="" />
+    <optimization name="com.youku.phone" refs="" />
+    <optimization name="com.zhiliaoapp.musically" refs="" />
+    <optimization name="com.baidu.video" refs="" />
+    <optimization name="com.storm.smart" refs="" />
+    <optimization name="tv.yixia.bobo" refs="" />
+    <optimization name="com.baidu.minivideo" refs="" />
+    <optimization name="com.ss.android.ugc.livelite" refs="" />
+    <optimization name="com.ss.android.article.news" refs="" />
+    <optimization name="com.meitu.meipaimv" refs="" />
+    <optimization name="com.cmcc.cmvideo" refs="" />
+    <optimization name="com.yixia.videoeditor" refs="" />
+    <optimization name="org.fungo.fungolive" refs="" />
+    <optimization name="dopool.player" refs="" />
+    <optimization name="cn.cntv" refs="" />
+    <optimization name="com.xingin.xhs" refs="" />
+    <optimization name="com.meelive.ingkee" refs="" />
+    <optimization name="com.tencent.weishi" refs="" />
+    <optimization name="com.tencent.map" refs="" />
+    <optimization name="com.baidu.BaiduMap" refs="" />
+    <optimization name="com.autonavi.minimap" refs="" />
+    <optimization name="com.google.android.apps.maps" refs="" />
+</power-optimization>

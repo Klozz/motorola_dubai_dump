@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Game optimizations device config
+-->
+<game-optimization version="1">
+
+    <devconfig>
+        <thermal-sensor>back_temp</thermal-sensor>
+        <!-- temperatures from low to high -->
+        <temp name="0" temp="0" tempClr="-10"/>
+        <temp name="41" temp="41" tempClr="39"/>
+        <temp name="42" temp="42" tempClr="40"/>
+        <temp name="43" temp="43" tempClr="41"/>
+        <temp name="44" temp="44" tempClr="42"/>
+        <temp name="45" temp="45" tempClr="43"/>
+        <temp name="46" temp="46" tempClr="44"/>
+        <temp name="47" temp="47" tempClr="45"/>
+    </devconfig>
+
+    <!-- base game -->
+    <optimization name="base_game" mode="normal">
+        <thermal>game-normal</thermal>
+        <default-rr>auto</default-rr>
+        <limit temp="43" rr="120"/>
+        <limit temp="44" rr="90"/>
+        <limit temp="45" rr="60"/>
+        <limit temp="47" rr="60" fps="30"/>
+    </optimization>
+    <optimization name="base_game" mode="perf">
+        <thermal>game-perf</thermal>
+        <default-rr>auto</default-rr>
+        <limit temp="43" rr="120"/>
+        <limit temp="44" rr="90"/>
+        <limit temp="45" rr="60"/>
+        <limit temp="47" rr="60" fps="30"/>
+    </optimization>
+    <optimization name="base_game" mode="powersave">
+        <thermal>game-normal</thermal>
+        <battery-saver>true</battery-saver>
+        <default-rr>60</default-rr>
+        <limit temp="0" rr="60"/>
+        <limit temp="47" rr="60" fps="30"/>
+    </optimization>
+
+    <!-- 60fps game -->
+    <optimization name="60fps_game" parent="base_game">
+        <default-rr>60</default-rr>
+    </optimization>
+    <optimization name="60fps_heavy_game" parent="60fps_game">
+        <upmigrate fps="40"/>
+    </optimization>
+    <!-- 90fps game -->
+    <optimization name="90fps_game" parent="base_game">
+        <default-rr>90</default-rr>
+    </optimization>
+    <optimization name="90fps_heavy_game" parent="90fps_game">
+        <upmigrate fps="70"/>
+    </optimization>
+    <!-- 120fps game -->
+    <optimization name="120fps_game" parent="base_game">
+        <default-rr>120</default-rr>
+    </optimization>
+    <optimization name="120fps_heavy_game" parent="120fps_game">
+        <upmigrate fps="100"/>
+    </optimization>
+    <!-- 144fps game -->
+    <optimization name="144fps_game" parent="base_game">
+        <default-rr>144</default-rr>
+    </optimization>
+    <optimization name="144fps_heavy_game" parent="144fps_game">
+        <upmigrate fps="130"/>
+    </optimization>
+
+    <!-- restricted game -->
+    <optimization name="60fps_restricted_game" parent="60fps_heavy_game" mode="normal">
+        <limit temp="43" rr="90" apprr="45"/>
+        <limit temp="45" rr="60" apprr="30"/>
+    </optimization>
+    <optimization name="60fps_restricted_game" parent="60fps_heavy_game" mode="perf">
+        <limit temp="43" rr="90" apprr="45"/>
+        <limit temp="45" rr="60" apprr="30"/>
+    </optimization>
+    <optimization name="60fps_restricted_game" parent="60fps_heavy_game" mode="powersave">
+        <limit rr="60" apprr="30"/>
+    </optimization>
+
+    <!-- other games -->
+    <optimization name="other_games" parent="base_game">
+    </optimization>
+
+    <optimization name="com.tencent.tmgp.sgame" refs="60fps_heavy_game" />
+    <optimization name="com.tencent.tmgp.pubgmhd" refs="60fps_heavy_game" />
+
+</game-optimization>
